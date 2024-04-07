@@ -15,12 +15,6 @@
     --White: hsl(0, 0%, 100%);
 }
 
-body {
-    background-color: var(--Light-grayish-cyan);
-    color: var(--Very-dark-cyan);
-    overflow-x: hidden;
-}
-
 .flex {
     display: flex;
     flex-direction: row;
@@ -28,8 +22,13 @@ body {
     justify-content: center;
 }
 
-#header {
-    margin: 5rem 0 3rem 0;
+body {
+    background-color: var(--Light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    overflow-x: hidden;
+    min-height: 100vh;
+    gap: 4rem;
+    flex-direction: column !important;
 }
 
 #main {
