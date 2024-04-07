@@ -246,6 +246,10 @@ label[for="custom"]{
 
 @media only screen and (max-width:540px){
 
+    #header {
+        margin-top: 3rem;
+    }
+
     body{
         gap:2rem;
     }
