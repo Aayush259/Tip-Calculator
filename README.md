@@ -3,8 +3,11 @@
 ## Overview
 This is a simple application that calculates the tip for a given amount. It's built using HTML, CSS, and JavaScript.
 
-<img src="./images/desktop-view.jpg" width="300">
-<img src="./images/mobile-view.jpeg">
+Here is the desktop and mobile view:
+<p float="left">
+    <img src="./images/desktop-view.jpg" width="300">
+    <img src="./images/mobile-view.jpeg">
+</p>
 
 ## Features
 - Input the bill amount
