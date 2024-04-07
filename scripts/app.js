@@ -11,10 +11,6 @@ const RadioBtns = document.querySelectorAll('.radios > input[type="radio"]');
 // Getting Custom input element for tip percent.
 const CustomTipPercent = document.getElementById('custom');
 
-const DisplayError = () => {
-    console.log('Error');
-}
-
 /*
     This function takes the bill amount, number of people, and discount percentage and calculate the tip. It returns an object which contains the the amount to be given by each person as well as the total tip amount.
 */
@@ -79,13 +75,17 @@ CustomTipPercent.addEventListener('blur', () => {
 */
 InputCountPeople.addEventListener('input', () => {
 
+    // Removing previous errors.
+    InputCountPeople.parentNode.classList.remove('error-border');
+    InputCountPeople.parentNode.previousElementSibling.children[1].classList.remove('error-active');
+
     // Initializing PeopleCount and BillAmount.
     const PeopleCount = Number(InputCountPeople.value);
     const BillAmount = Number(InputMoney.value);
 
     // If count of people is not a number or 0 then show error.
     if (isNaN(PeopleCount) || PeopleCount === 0) {
-        DisplayError();
+        DisplayError(InputCountPeople);
         return;
     }
     

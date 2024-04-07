@@ -22,7 +22,9 @@
 
     <div id="input-container">
       <div class="input-money">
-        <label for="input-money" class="bold label-txt">Bill</label>
+        <div class="label-error-container flex">
+          <label for="input-money" class="bold label-txt">Bill</label><span class="error">Enter a valid amount</span>
+        </div>
         <div class="input">
           <img src="./images/icon-dollar.svg" alt="Dollar">
           <input type="text" id="input-money" name="input-money" placeholder="0">
@@ -49,7 +51,10 @@
       </div>
 
       <div class="people-count">
-        <label for="people-count" class="bold label-txt">Number of People</label>
+        <div class="label-error-container flex">
+          <label for="people-count" class="bold label-txt">Number of People</label>
+          <span class="error">Enter valid value</span>
+        </div>
         <div class="input">
           <img src="./images/icon-person.svg" alt="Number of people">
           <input type="text" id="people-count" name="people-count" placeholder="0">
