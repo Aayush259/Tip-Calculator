@@ -4,8 +4,8 @@
 This is a simple application that calculates the tip for a given amount. It's built using HTML, CSS, and JavaScript.
 
 Here is the desktop and mobile view:
-<p float="left">
-    <img src="./images/desktop-view.jpg" width="300">
+<p>
+    <img src="./images/desktop-view.jpg" width="600">
     <img src="./images/mobile-view.jpeg">
 </p>
 
