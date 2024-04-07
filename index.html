@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+
+  <header id="header">
+    <img src="./images/logo.svg" alt="App Logo">
+  </header>
+
+  <main id="main">
+
+    <div id="input-container">
+      <div class="input-money">
+        <label for="input-money">Bill</label>
+        <div class="input">
+          <img src="./images/icon-dollar.svg" alt="Dollar">
+          <input type="text" id="input-money" name="input-money" placeholder="0">
+        </div>
+      </div>
+
+      <div class="tip-percent">
+        <label for="tip-percent">Select Tip &percnt;</label>
+        <input type="checkbox" name="tip-percent" id="tip-percent">
+        <input type="checkbox" name="tip-percent" id="tip-percent">
+        <input type="checkbox" name="tip-percent" id="tip-percent">
+        <input type="checkbox" name="tip-percent" id="tip-percent">
+        <input type="checkbox" name="tip-percent" id="tip-percent">
+        <input type="checkbox" name="tip-percent" id="tip-percent">
+      </div>
+
+      <div class="people-count">
+        <label for="people-count">Number of People</label>
+        <div class="input">
+          <img src="./images/icon-person.svg" alt="Number of people">
+          <input type="text" id="people-count" name="people-count" placeholder="0">
+        </div>
+      </div>
+
+    </div>
+
+    <div id="output-container">
+      <div class="tip-amount">
+        <div>
+          <p class="title">Tip Amount</p>
+          <p class="sub-title">/ person</p>
+        </div>
+        <p id="per-person-tip">$0.00</p>
+        <div>
+          <p class="title">Total</p>
+          <p class="sub-title">/ person</p>
+        </div>
+        <p id="total-tip">$0.00</p>
+      </div>
+      <button id="reset-btn">Reset</button>
+    </div>
+
+  </main>
+
+  <script src="./scripts/app.js"></script>
+</body>
+</html>
