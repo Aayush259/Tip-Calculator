@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  <header id="header">
+  <header id="header" class="flex">
     <img src="./images/logo.svg" alt="App Logo">
   </header>
 
@@ -30,13 +30,20 @@
       </div>
 
       <div class="tip-percent">
-        <label for="tip-percent">Select Tip &percnt;</label>
-        <input type="checkbox" name="tip-percent" id="tip-percent">
-        <input type="checkbox" name="tip-percent" id="tip-percent">
-        <input type="checkbox" name="tip-percent" id="tip-percent">
-        <input type="checkbox" name="tip-percent" id="tip-percent">
-        <input type="checkbox" name="tip-percent" id="tip-percent">
-        <input type="checkbox" name="tip-percent" id="tip-percent">
+        <p>Select Tip &percnt;</p>
+        <div class="radios">
+          <input type="radio" name="tip-percent" id="five-percent">
+          <label for="five-percent">5%</label>
+          <input type="radio" name="tip-percent" id="ten-percent">
+          <label for="ten-percent">10%</label>
+          <input type="radio" name="tip-percent" id="fifteen-percent">
+          <label for="fifteen-percent">15%</label>
+          <input type="radio" name="tip-percent" id="twnt-five-percent">
+          <label for="twnt-five-percent">25%</label>
+          <input type="radio" name="tip-percent" id="fifty-percent">
+          <label for="fifty-percent">50%</label>
+          <input type="text" name="tip-percent" id="custom" value="Custom" disabled>
+        </div>
       </div>
 
       <div class="people-count">
@@ -49,14 +56,14 @@
 
     </div>
 
-    <div id="output-container">
+    <div id="output-container" class="flex">
       <div class="tip-amount">
-        <div>
+        <div class="flex">
           <p class="title">Tip Amount</p>
           <p class="sub-title">/ person</p>
         </div>
         <p id="per-person-tip">$0.00</p>
-        <div>
+        <div class="flex">
           <p class="title">Total</p>
           <p class="sub-title">/ person</p>
         </div>
