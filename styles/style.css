@@ -48,6 +48,11 @@ body{
     border-radius:5px;
     width:fit-content;
     margin-top:4px;
+    border: 1px solid transparent;
+}
+
+.active {
+    border: 1px solid var(--Very-dark-cyan) !important;
 }
 
 input[type="text"]{
@@ -93,6 +98,11 @@ input[type="text"]:focus{
     cursor:pointer;
     border-radius:8px;
     color:var(--White);
+}
+
+label[for="custom"]{
+    border-radius: 8px;
+    border: 1px solid transparent;
 }
 
 #custom{
